@@ -1,0 +1,21 @@
+{
+    "compiler": "clang++",
+    "defines": [
+        "-D_REENTRANT",
+        "-DQT_NO_DEBUG",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB"
+    ],
+    "includes": [
+        "-I.",
+        "-I.",
+        "-I/usr/include/qt",
+        "-I/usr/include/qt/QtWidgets",
+        "-I/usr/include/qt/QtGui",
+        "-I/usr/include/qt/QtCore",
+        "-I.",
+        "-I/usr/lib/qt/mkspecs/linux-g++"
+    ],
+    "flags": "-g -std=gnu++17 -fvisibility=hidden -fvisibility-inlines-hidden -UNDEBUG -fPIC"
+}

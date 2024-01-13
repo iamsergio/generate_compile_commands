@@ -1,0 +1,6 @@
+main.o
+Makefile
+.qmake.stash
+example/example
+
+compile_commands.json
