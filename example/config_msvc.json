@@ -1,0 +1,26 @@
+{
+    "compiler": "cl.exe",
+    "defines": [
+        "-D_REENTRANT",
+        "-DQT_NO_DEBUG",
+        "-DQT_WIDGETS_LIB",
+        "-DQT_GUI_LIB",
+        "-DQT_CORE_LIB",
+        "-DUNICODE",
+        "-D_UNICODE",
+        "-DWIN32",
+        "-D_ENABLE_EXTENDED_ALIGNED_STORAGE",
+        "-DWIN64",
+        "-DNDEBUG"
+    ],
+    "includes": [
+        "-I.",
+        "-IC:\\Qt\\6.5.1\\msvc2019_64\\include",
+        "-IC:\\Qt\\6.5.1\\msvc2019_64\\include\\QtWidgets",
+        "-IC:\\Qt\\6.5.1\\msvc2019_64\\include\\QtGui",
+        "-IC:\\Qt\\6.5.1\\msvc2019_64\\include\\QtCore",
+        "-IC:\\Qt\\6.5.1\\msvc2019_64\\mkspecs\\win32-msvc",
+        "-Irelease"
+    ],
+    "flags": "-nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -O2 -MD -std:c++17 -utf-8 -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -EHsc"
+}

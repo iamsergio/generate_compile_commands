@@ -4,3 +4,4 @@ Makefile
 example/example
 
 compile_commands.json
+.cache

@@ -1,0 +1,48 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "extensions": {
+    "recommendations": [
+      "vadimcn.vscode-lldb",
+      "llvm-vs-code-extensions.vscode-clangd",
+      "ms-vscode.cmake-tools"
+    ],
+  },
+  "settings": {
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "clangd.arguments": [
+      "-header-insertion=never",
+      "--clang-tidy=false"
+    ],
+    "clangd.fallbackFlags": [
+      "-IC:\\Qt\\6.5.1\\msvc2019_64\\include"
+    ],
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+    "files.insertFinalNewline": true
+  },
+  "launch": {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Current Target (LLDB)",
+        "type": "lldb",
+        "request": "launch",
+        "program": "${command:cmake.launchTargetPath}",
+        "args": [],
+        "cwd": "${command:cmake.buildDirectory}"
+      },
+      {
+        "name": "Current Target (VS)",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "${command:cmake.launchTargetPath}",
+        "args": [],
+        "cwd": "${command:cmake.buildDirectory}"
+      }
+    ]
+  }
+}
